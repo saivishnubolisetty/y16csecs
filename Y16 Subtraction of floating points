@@ -1,0 +1,57 @@
+Y16 Subtraction of floating points
+
+Given two floating points A and B. perform abslute difference of A, B.
+
+Input Format
+
+Space seperated values represents A and B.
+
+Constraints
+
+-10,00.00 <= A, B <= 100,00.00
+
+Output Format
+
+Single value represents absluet difference of A & B
+
+Sample Input 0
+
+0.99 1.98
+Sample Output 0
+
+0.99
+Explanation 0
+
+Given A = 0.99 and B=1.98
+
+B-A = 0.99
+Sample Input 1
+
+0.99 1.9889
+Sample Output 1
+
+0.9989
+
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a,b,c;
+    scanf("%f%f",&a,&b);
+    if(a>b)
+    {
+        c=a-b;
+         printf("%g",c);
+    }
+    else{
+        c=b-a;
+    printf("%g",c);
+       }
+    
+  
+}
