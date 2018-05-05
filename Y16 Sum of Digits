@@ -1,0 +1,48 @@
+Y16 Sum of Digits
+
+Given an integer N, Find the sum of individual digits of it.
+
+Input Format
+
+Single integer represents N.
+
+Constraints
+
+0<= N <=10,00,00,000
+
+Output Format
+
+Sum of Individual digits of a number.
+
+Sample Input 0
+
+123
+Sample Output 0
+
+6
+Sample Input 1
+
+1122033
+Sample Output 1
+
+12
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long int a;
+int count=0,digit;
+scanf("%lld",&a);
+while (a > 0) {
+ int digit = a % 10;
+    count=count+digit;
+a /= 10;
+}
+    printf("%d",count);
+}
+
