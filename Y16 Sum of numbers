@@ -1,0 +1,46 @@
+Y16 Sum of numbers
+
+Given a values N. Find the sum of all the numbers from 0 to N.
+
+Input Format
+
+Single value represents N.
+
+Constraints
+
+0<= N <= 10,00,000
+
+Output Format
+
+Single value represents sum of all the values from 0 to N.
+
+Sample Input 0
+
+10
+Sample Output 0
+
+55
+Sample Input 1
+
+16
+Sample Output 1
+
+136
+
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+long long int n,c=0,i;
+    scanf("%lld",&n);
+    for(i=0;i<=n;i++){
+        c=c+i;
+    }
+    printf("%lld",c);
+    return 0;
+}
