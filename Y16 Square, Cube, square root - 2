@@ -1,0 +1,62 @@
+Y16 Square, Cube, square root - 2
+
+Given a Integer N. Print the Square, Cube, Square root from 1 to N in each new line.
+
+Input Format
+
+Single integer represents N.
+
+Constraints
+
+0<= N <= 10,000
+
+Output Format
+
+N lines each line contains Space seperated valures represents Square, Cube, Square Root of 1 to N.
+
+Sample Input 0
+
+5
+Sample Output 0
+
+1 1 1
+4 8 1
+9 27 1
+16 64 2
+25 125 2
+Sample Input 1
+
+9
+Sample Output 1
+
+1 1 1
+4 8 1
+9 27 1
+16 64 2
+25 125 2
+36 216 2
+49 343 2
+64 512 2
+81 729 3
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long int a,b,c,d,n;
+    scanf("%lld",&n);
+    for(a=1;a<=n;a++){
+    b=a*a;
+    c=a*a*a;
+    d=sqrt(a);
+   printf("%lld",b);
+    printf(" %lld",c);
+         printf(" %lld",d);
+        printf("\n");
+    }
+    return 0;
+}
