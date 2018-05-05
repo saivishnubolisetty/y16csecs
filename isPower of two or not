@@ -1,0 +1,68 @@
+isPower of two or not
+
+Given an integer N, Find whether it is possible to write in terms of 2 power or not.
+
+*Hint: Try to solve without using functions, Loops.
+
+Input Format
+
+First line contains an integer represents no of test cases T.
+
+Next T lines contains value N.
+
+Constraints
+
+1<= T <= 3,000,000
+
+1<= N <= 9,000,000,000,000,000,000
+
+Output Format
+
+Print Yes if it is possible to write in terms of 2 Power.
+
+Print No if it is not possible to write.
+
+Sample Input 0
+
+2
+2
+4
+Sample Output 0
+
+Yes
+Yes
+Sample Input 1
+
+3
+2
+4
+6
+Sample Output 1
+
+Yes
+Yes
+No
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+long long int n,t;
+    scanf("%lld",&t);
+    while(t>0)
+        {
+        scanf("%lld",&n);
+     if((n & (n - 1)) == 0)
+     {
+   printf("Yes\n");
+      }
+      else{
+         printf("No\n");
+          }
+            t--;
+    }
+}
