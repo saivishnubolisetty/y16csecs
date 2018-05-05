@@ -1,0 +1,50 @@
+Y16 Reverse it.
+
+Given an integer N. Reverse the number and print it.
+
+Input Format
+
+Single value represent N.
+
+Constraints
+
+0<= N <= 10,00,00,000
+
+Output Format
+
+Single value represents reverse of N.
+
+Sample Input 0
+
+1230
+Sample Output 0
+
+321
+Sample Input 1
+
+1010101
+Sample Output 1
+
+1010101
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ik=new Scanner(System.in);
+        Long num;
+        long reversed=0;
+        num=ik.nextLong();
+         while(num != 0) {
+            long digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+        System.out.println(reversed);
+
+    }
+}
