@@ -1,0 +1,81 @@
+Validate Triangle
+
+Write a program to check whether a triangle is valid or not, when the three angles of the triangle are the inputs. A triangle is valid if the sum of all the three angles is equal to 180 degress .
+
+Input Format
+
+The first line contains an integer T, total number of testcases.
+
+Then follow T lines, each line contains three angles A, B and C of triangle space seperated values.
+
+Constraints
+
+1 ≤ T ≤ 1000
+
+Output Format
+
+Display 'Yes' or 'No' if the triangle is Valid or not respectively.
+
+Sample Input 0
+
+1
+40 40 100
+Sample Output 0
+
+Yes
+Explanation 0
+
+The angles are 40,40,100 which sums 180. as it is valid angle for a trangle print Yes on as output.
+Sample Input 1
+
+3
+180 0 0
+0 180 0
+0 0 180
+Sample Output 1
+
+No
+No
+No
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,a,b,c;
+          int n;
+    scanf("%d",&n);
+
+while(n!=0){
+        scanf("%d%d%d",&a,&b,&c);
+        if((a>0) && (b>0) && (c>0)  )
+        {
+            if((a+b+c)==180)
+            {
+                
+            printf("Yes");
+             printf("\n");
+            }
+        
+        else
+        {
+             printf("No");
+            printf("\n");
+           
+        }
+        }
+    else
+        {
+             printf("No");
+            printf("\n");
+           
+        }
+    n--;
+    }
+    return 0;
+}
+
