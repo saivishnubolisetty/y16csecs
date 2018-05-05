@@ -1,0 +1,61 @@
+Y16 Sum of alternative Numbers
+
+Given a values N. Find the sum's of alternative the numbers from 0 to N.
+
+Input Format
+
+Single value represents N
+
+Constraints
+
+0<= N <= 10,00,000
+
+Output Format
+
+Two spaceseperated value represents sum's of alternative values from 0 to N.
+
+Sample Input 0
+
+5
+Sample Output 0
+
+6 9
+Explanation 0
+
+Given N value 5.
+The numbers from 0 to 5 is 0,1,2,3,4,5
+
+Alternative Sum1=0+2+4=6
+
+alternative sum2= 1+3+5=9
+
+Sample Input 1
+
+1
+Sample Output 1
+
+0 1
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+long long int n,c=0,c1=0,j=1,i=0;
+    scanf("%lld",&n);
+   while(i<=n)
+        {
+            c=c+i;
+            i=i+2;
+        }
+        while(j<=n)
+        {
+            c1=c1+j;
+            j=j+2;
+        }
+    printf("%lld %lld",c,c1);
+    return 0;
+}
