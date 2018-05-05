@@ -1,0 +1,43 @@
+Y16 Hello World
+
+Given a string as input represents the Name of the preson, Say Hello to them.
+
+Input Format
+
+Single String represents Name of the person.
+
+Constraints
+
+1<= String length <= 100.
+
+Output Format
+
+Hello String !!
+
+Sample Input 0
+
+Bob
+Sample Output 0
+
+Hello Bob !!
+Sample Input 1
+
+Alice
+Sample Output 1
+
+Hello Alice !!
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        String a;
+        Scanner ik=new Scanner(System.in);
+        a=ik.nextLine();
+     System.out.println("Hello"+" "+ a +" !"+"!");
+    }
+}
