@@ -1,0 +1,45 @@
+Y16 Integer Addition
+
+Given two integer values A, B. Perform additon and display thre result.
+
+Input Format
+
+Space seperated values represents A and B.
+
+Constraints
+
+-10,000,000 <= A, B <= 10,000,000,000
+
+Output Format
+
+Single line of integer represents addition of A and B
+
+Sample Input 0
+
+90 10
+Sample Output 0
+
+100
+Explanation 0
+
+90 + 10 = 100
+Sample Input 1
+
+99 -98
+Sample Output 1
+
+1
+
+Solution:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ik=new Scanner(System.in);
+        int a=ik.nextInt();
+        int b=ik.nextInt();
+        System.out.println(a+b);
+    }
+}
