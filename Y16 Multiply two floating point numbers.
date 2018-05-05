@@ -1,0 +1,43 @@
+Y16 Multiply two floating point numbers.
+
+Given two numbers represents floating point numbers A & B. Multiply them and display the result.
+
+Input Format
+
+Two floating point numbers represents A & B.
+
+Constraints
+
+-1,000.00 <= A, B <= 10,000.00
+
+Output Format
+
+Single number represent the A*B
+
+Sample Input 0
+
+-0.9 0.9999
+Sample Output 0
+
+-0.89991
+Sample Input 1
+
+1.879 -9.873
+Sample Output 1
+
+-18.5514
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a,b,c;
+    scanf("%f%f",&a,&b);
+        c=a*b;
+    printf("%g",c);
+       }
+    
