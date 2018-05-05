@@ -1,0 +1,55 @@
+Y16 Alphabet or not
+
+Given a character 'S' find the given character is alphabet or not.
+
+Input Format
+
+Single value represents the character S.
+
+Constraints
+
+All the characters are printable characters.
+
+Output Format
+
+Print Yes if it is a character.
+
+print No if it is not a character.
+
+Sample Input 0
+
+A
+Sample Output 0
+
+Yes
+Sample Input 1
+
+q
+
+Sample Output 1
+
+Yes
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ik=new Scanner(System.in);
+        char a=ik.next().charAt(0);  
+        int as = (int) a;
+        if(as>=65 && as<=90){
+        System.out.println("Yes");
+        }
+        else if(as>=97 && as<=122){
+            System.out.println("Yes");
+        }
+        else{
+          System.out.println("No");  
+        }
+        
+    }
+}
