@@ -1,0 +1,83 @@
+IsEven
+
+Given an integer N. Find whether the N is even or not.
+
+*Hint: Try to solve this using all of the following logics.
+
+Using Modulor Operator
+
+Using shift Operator
+
+Using Division, Multiplication operator
+
+Using AND Operator.
+
+Input Format
+
+Single line of integer represents T, No of test cases followed by T space seperated integer values.
+
+Constraints
+
+1<= T <= 100
+
+0<= N <= 1000000000000
+
+Output Format
+
+Print Yes if it is even number
+
+Print No if it is Odd Number
+
+Sample Input 0
+
+5
+2
+4
+3
+5
+123
+Sample Output 0
+
+Yes
+Yes
+No
+No
+No
+Sample Input 1
+
+3
+10004
+23453
+12345
+Sample Output 1
+
+Yes
+No
+No
+
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ik=new Scanner(System.in);
+        int n=ik.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            int a=ik.nextInt();
+            if(a%2==0)
+            {
+                System.out.println("Yes");
+            }
+            else{
+                  System.out.println("No");
+            }
+            
+        }
+        
+    }
+}
