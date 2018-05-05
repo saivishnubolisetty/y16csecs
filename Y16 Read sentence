@@ -1,0 +1,43 @@
+Y16 Read sentence
+
+Read Sentence from standard input and print to the same sentence to standard output.
+
+Input Format
+
+A single line represents sentence.
+
+Constraints
+
+3<= Sentence length <= 1000
+
+Output Format
+
+Given sentence
+
+Sample Input 0
+
+Hello World
+Sample Output 0
+
+Hello World
+Sample Input 1
+
+Robo 2.0
+Sample Output 1
+
+Robo 2.0
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner ik=new Scanner(System.in);
+        String s=ik.nextLine();
+        System.out.println(s);
+    }
+}
