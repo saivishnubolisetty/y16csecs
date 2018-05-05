@@ -1,0 +1,74 @@
+Y16 Simple Arithmetic
+
+Given 3 values represents M, Arithmetic operator , N. Perform the arthimetic operator on M,N. Display the result.
+
+Input Format
+
+Single line contains spaceseperated values represents M, arithmetic operator, N.
+
+Constraints
+
+1<= M,N <= 10,00,000
+
+Arithmetic operators are +, -, *, /, %
+
+Output Format
+
+Single line of value represents the result of it.
+
+Sample Input 0
+
+100 + 90
+Sample Output 0
+
+190
+Sample Input 1
+
+100 * 90
+Sample Output 1
+
+9000
+
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner ik=new Scanner(System.in);
+        int d;
+        int a=ik.nextInt();
+        char c=ik.next().charAt(0);
+        int b=ik.nextInt();
+     
+        switch(c)
+    {
+        case'+':
+            d=a+b;
+            System.out.println(d);          
+            break;
+         case'-':
+            d=a-b;
+            System.out.println(d); 
+            break;
+            case'*':
+            d=a*b;
+               System.out.println(d);  
+            break;
+            case'/':
+            d=a/b;
+             System.out.println(d); 
+            break;
+        case'%':
+            d=a%b;
+              System.out.println(d); 
+            break;
+        default:
+           System.out.println("invalid"); 
+            break;
+    }
+    }
+}
