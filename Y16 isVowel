@@ -1,0 +1,54 @@
+Y16 isVowel
+
+Given a character 'S' verify either it is Vowel or Consonant.
+
+Input Format
+
+Single character represents Alphabet 'S'.
+
+Constraints
+
+All the characters belongs to Alphabets.
+
+Output Format
+
+Print Vowel if the given character is vowel, Print Consonant if it is Consonant.
+
+Sample Input 0
+
+A
+Sample Output 0
+
+Vowel
+Sample Input 1
+
+b
+Sample Output 1
+
+Consonant
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ik=new Scanner(System.in);
+          char c=ik.next().charAt(0);
+        if(c=='a' || c=='e' || c=='i' || c=='o'|| c=='u')
+        {
+            System.out.println("Vowel");
+        }
+        else if (c=='A' || c=='E' || c=='I' || c=='O' || c=='U')
+        {
+              System.out.println("Vowel");
+        }
+        else
+        {
+              System.out.println("Consonant");
+        }
+            
+    }
+}
