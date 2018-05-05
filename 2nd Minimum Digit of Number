@@ -1,0 +1,60 @@
+2nd Minimum Digit of Number
+
+You will be provided a number N, You are suppose to find the 2nd minimum digit of the given number. if you don't have 2nd minimum number print "No" as answer. Your not suppose to use the array and you should use only one loop in the program.
+
+Ex: 123456789
+
+2nd minimum digit is 2.
+
+Input Format
+
+Single line of integer N.
+
+Constraints
+
+1<= N <= 10000000000
+
+Output Format
+
+Single digit of integer.
+
+Sample Input 0
+
+123456789
+Sample Output 0
+
+2
+Explanation 0
+
+In Given number 123456789 the second minimum number is 2.
+so we have to print 2 as output
+
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+long int n;
+int m1=10,m2=10;
+scanf("%ld",&n);
+while(n)
+{
+int r=n%10;
+if(m1>r){
+m2=m1;
+m1=r;
+}
+else if(m1<r&&r<m2)
+m2=r;
+n/=10;
+
+}
+if(m2==10)
+printf("No\n");
+else 
+printf("%d\n",m2);
+return 0;
+}
