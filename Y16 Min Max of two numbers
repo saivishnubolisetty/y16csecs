@@ -1,0 +1,70 @@
+/*Y16 Min Max of two numbers
+
+Given 2 Integers A and B Print them in such a way that Minimum number followed by Maximum number. If both values are equal print -1.
+
+Input Format
+
+Space seperated values represent A and B.
+
+Constraints
+
+1<= A, B <= 1000
+
+Output Format
+
+Space sepetated values of Minimum and Maximum.
+
+Sample Input 0
+
+40 5
+Sample Output 0
+
+5 40
+Explanation 0
+
+Given values 40, 5. The minimum values among them are 5. So we print 5 followed by 40.*/
+
+
+Solution:
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner ik=new Scanner(System.in);
+
+        int a=ik.nextInt();
+
+        int b=ik.nextInt();
+
+        if(a>b)
+
+        {
+                  a=a+b;  
+
+                  b=a-b;
+
+                  a=a-b;
+
+            System.out.println(a+" "+b);
+        }
+
+        else if(a==b)
+        {
+
+          System.out.println(-1);  
+
+        }
+        else
+        {
+
+            System.out.println(a+" "+b);   
+
+        }
+
+    }
+
+}
