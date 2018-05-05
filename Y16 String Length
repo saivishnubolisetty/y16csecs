@@ -1,0 +1,44 @@
+Y16 String Length
+
+Given a String 'S' represents the name of the person. Find the length of it.
+
+Input Format
+
+Single string represents Name of the person.
+
+Constraints
+
+1<= String Length <= 100
+
+Output Format
+
+Integer represents the length of Name.
+
+Sample Input 0
+
+John
+Sample Output 0
+
+4
+Sample Input 1
+
+Jagadeesh
+Sample Output 1
+
+9
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       String a;
+        Scanner ik=new Scanner(System.in);
+        a=ik.nextLine();
+        int i=a.length();
+        System.out.println(i);
+}
+}
